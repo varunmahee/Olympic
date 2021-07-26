@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Class 81 Project</title>
+</head>
+
+<style>
+    body {
+        text-align: center;
+        background-image: url("flag.jpg");
+        background-color: #cccccc;  
+    }
+
+    h1{
+        color: white;
+    }
+
+    #myCanvas
+    {
+	width: 800px;
+	height: 400px;
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+    }
+
+</style>
+
+
+
+<body>
+    <h1>Olympic Games Tokyo 2020</h1>
+    <canvas id="myCanvas"></canvas>
+    
+    
+    <script>
+        canvas = document.getElementById("myCanvas");
+        ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 1;
+        ctx.rect(50, 45, 200, 60);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth = 2;
+        ctx.arc(70, 70, 15, 0, 2 * Math.PI);
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.strokeStyle = "yellow";
+        ctx.lineWidth = 2;
+        ctx.arc(87, 85, 15, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.arc(105, 70, 15, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 2;
+        ctx.arc(122, 85, 15, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 2;
+        ctx.arc(140, 70, 15, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+</body>
+
+
+</html>
